@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DIVINDUS CAPREF — La solution intelligente | Cabines &amp; préfabriqué</title>
+<meta name="description" content="DIVINDUS CAPREF : 60 ans d'expertise, 7 unités industrielles, 2 300 collaborateurs. Cabines sahariennes mobiles et chalets préfabriqués fabriqués en Algérie.">
+<meta name="theme-color" content="#05090D">
+<link rel="icon" href="../assets/img/brand/logo-capref-sidebar.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="../assets/css/modern.css">
+<meta property="og:title" content="DIVINDUS CAPREF — La solution intelligente">
+<meta property="og:description" content="60 ans d'expertise · 7 unités · 2 300 collaborateurs. Cabines et chalets préfabriqués en Algérie.">
+<meta property="og:image" content="../assets/img/products/cabine-tole-cover.jpg">
+</head>
+<body>
+
+<!-- Préchargeur -->
+<div class="loader" aria-hidden="true">
+  <div class="loader__word"><span>C</span><span>A</span><span>P</span><span>R</span><span>E</span><span>F</span></div>
+  <div class="loader__bar"></div>
+</div>
+
+<div class="progress" role="presentation"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ══ Navigation ══ -->
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="index.html" aria-label="DIVINDUS CAPREF — Accueil">
+      <img src="../assets/img/brand/logo-capref-sidebar.png" alt="Logo DIVINDUS CAPREF" width="237" height="213">
+      <b>DIVINDUS CAPREF<span>Cabines et préfabriqué</span></b>
+    </a>
+    <nav class="nav__menu" aria-label="Navigation principale">
+      <a href="#entreprise">Entreprise</a>
+      <a href="#produits">Produits</a>
+      <a href="#secteurs">Secteurs</a>
+      <a href="#reseau">Réseau</a>
+      <a href="#actus">Actualités</a>
+    </nav>
+    <a class="btn btn--sm nav__cta" href="#contact" data-magnet>
+      Nous contacter
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <button class="nav__burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navover"><span></span></button>
+  </div>
+</header>
+
+<div class="navover" id="navover" aria-label="Menu">
+  <button class="navover__close" type="button" aria-label="Fermer le menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <ul>
+    <li><a href="#entreprise">Entreprise</a></li>
+    <li><a href="#produits">Produits</a></li>
+    <li><a href="#secteurs">Secteurs</a></li>
+    <li><a href="#reseau">Réseau</a></li>
+    <li><a href="#actus">Actualités</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="navover__foot">
+    <a class="btn" href="produit.html">Voir une fiche produit</a>
+    <a class="alink" href="../index.html">Voir la Proposition A — Corporate</a>
+  </div>
+</div>
+
+<main>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+    <div class="aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+    <div class="container hero__grid">
+      <div>
+        <span class="tag">Divindus Capref · La solution intelligente</span>
+        <h1>
+          <span class="line"><span>Révolutionner</span></span>
+          <span class="line"><span>votre espace avec</span></span>
+          <span class="line"><span class="grad">le préfabriqué.</span></span>
+        </h1>
+        <p class="hero__sub">Avec un savoir-faire de plus de 60 ans, nos unités de fabrication de chalets en bois et cabines CAPREF conçoivent des constructions de haute qualité, pour tous les terrains — du chantier urbain à la base-vie saharienne.</p>
+        <div class="hero__cta">
+          <a class="btn" href="#produits" data-magnet>
+            Découvrir la gamme
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn--glass" href="#contact">Demander un devis</a>
+        </div>
+        <ul class="hero__stats">
+          <li><b><span data-count="60">0</span><i>+</i></b><span>ans d'expertise</span></li>
+          <li><b><span data-count="2300">0</span><i>+</i></b><span>employés</span></li>
+          <li><b><span data-count="7">0</span></b><span>unités</span></li>
+          <li><b><span data-count="8.19" data-dec="2">0</span><i> Mds</i></b><span>DA de CA</span></li>
+        </ul>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__ring" aria-hidden="true"></div>
+        <img src="../assets/img/site/hero-banner.png" alt="Cabine préfabriquée DIVINDUS CAPREF avec baies vitrées et bardage clair" width="950" height="769" data-parallax fetchpriority="high">
+        <div class="hero__chip hero__chip--1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 9.3 8 10 4.6-.7 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+          Entreprise publique · Groupe DIVINDUS
+        </div>
+        <div class="hero__chip hero__chip--2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+          Conçu pour le Sahara
+        </div>
+      </div>
+    </div>
+    <div class="scrollcue" aria-hidden="true"><i></i>Défiler</div>
+  </section>
+
+  <!-- ══ MARQUEE ══ -->
+  <section class="marq" aria-hidden="true">
+    <div class="marq__row">
+      <span class="fill">Durabilité</span><i></i><span>Rapidité de construction</span><i></i><span class="fill">Flexibilité</span><i></i><span>Polyvalence</span><i></i><span class="fill">Écologique</span><i></i><span>Mobilité</span><i></i>
+      <span class="fill">Durabilité</span><i></i><span>Rapidité de construction</span><i></i><span class="fill">Flexibilité</span><i></i><span>Polyvalence</span><i></i><span class="fill">Écologique</span><i></i><span>Mobilité</span><i></i>
+    </div>
+    <div class="marq__row marq__row--rev">
+      <span>Qualité</span><i></i><span>Économique</span><i></i><span>Facile à assembler</span><i></i><span>Confort professionnel</span><i></i><span>Normes élevées</span><i></i>
+      <span>Qualité</span><i></i><span>Économique</span><i></i><span>Facile à assembler</span><i></i><span>Confort professionnel</span><i></i><span>Normes élevées</span><i></i>
+    </div>
+  </section>
+
+  <!-- ══ BENTO ENTREPRISE ══ -->
+  <section class="section" id="entreprise">
+    <div class="container">
+      <div class="sec-head rv">
+        <span class="tag">Qui sommes-nous</span>
+        <h2>Une histoire industrielle <span class="grad">de plus de 60 ans</span></h2>
+        <p class="lead">DIVINDUS CAPREF Spa est née de la fusion-absorption de 7 anciennes filiales du Groupe DIVINDUS activant dans le Domaine d'Activité Stratégique des « Cabines et Préfabriqués en bois ».</p>
+      </div>
+
+      <div class="bento">
+        <div class="cell cell--w2 rv">
+          <div class="cell__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div>
+          <h3>Notre mission</h3>
+          <p>Produire et commercialiser, aux meilleures normes de qualité et de sécurité, des cabines sahariennes mobiles adaptées aux marchés de l'exploration pétrolière et des travaux publics, ainsi que des chalets préfabriqués fixes pour le tourisme et les institutions de l'État.</p>
+        </div>
+        <div class="cell rv" data-d="1">
+          <b><span data-count="60">0</span><i>+</i></b>
+          <span class="cell__lbl">Années d'expérience</span>
+        </div>
+        <div class="cell rv" data-d="2">
+          <b><span data-count="7">0</span></b>
+          <span class="cell__lbl">Unités industrielles</span>
+        </div>
+        <div class="cell cell--img cell--h2 rv">
+          <img src="../assets/img/site/about.png" alt="Atelier de production CAPREF : module préfabriqué en cours d'assemblage" loading="lazy">
+          <div class="cell__cap"><b>Production intégrée</b><span>Un processus de fabrication rigoureux, du châssis à la finition</span></div>
+        </div>
+        <div class="cell rv" data-d="1">
+          <b><span data-count="2300">0</span><i>+</i></b>
+          <span class="cell__lbl">Employés</span>
+        </div>
+        <div class="cell rv" data-d="2">
+          <b><span data-count="8.19" data-dec="2">0</span><i> Mds</i></b>
+          <span class="cell__lbl">Chiffre d'affaires (DA)</span>
+        </div>
+        <div class="cell cell--logo rv" data-d="3">
+          <img src="../assets/img/brand/logo-capref-sidebar.png" alt="Logo DIVINDUS CAPREF" loading="lazy">
+        </div>
+        <div class="cell cell--w2 rv" data-d="1">
+          <div class="cell__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Z"/></svg></div>
+          <h3>Notre vision</h3>
+          <p>Un partenaire puissant qui incorpore des produits et services de haute qualité. Grâce à une vision claire et à une approche centrée sur la qualité et la durabilité, l'entreprise a conquis le marché algérien et continue d'étendre sa présence dans la construction préfabriquée.</p>
+        </div>
+        <div class="cell cell--img cell--w2 rv" data-d="2">
+          <img src="../assets/img/site/video-image-2.png" alt="Base-vie de cabines sahariennes CAPREF sur un site pétrolier" loading="lazy">
+          <div class="cell__cap"><b>Bases-vie sahariennes</b><span>Des modules éprouvés sur les sites d'exploration du Grand Sud</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PRODUITS ══ -->
+  <section class="section" id="produits">
+    <div class="aurora" aria-hidden="true"><span class="a2" style="left:auto;right:-12%"></span></div>
+    <div class="container">
+      <div class="sec-head sec-head--row rv">
+        <div>
+          <span class="tag">Nos produits</span>
+          <h2>Deux gammes, <span class="grad">tous les terrains</span></h2>
+        </div>
+        <a class="alink" href="produit.html">Voir une fiche produit complète <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+
+      <div class="show">
+        <article class="show__item rv">
+          <div class="show__media">
+            <span class="show__num">01</span>
+            <span class="show__badge">CABINE 2025</span>
+            <img src="../assets/img/products/cabine-sandwich-cover.jpg" alt="Cabine en panneau sandwich CAPREF avec véranda couverte" loading="lazy">
+          </div>
+          <div>
+            <h3>Cabine en panneau sandwich</h3>
+            <p>Structures modulaires innovantes conçues pour allier robustesse, isolation thermique et rapidité d'installation. Deux faces en acier galvanisé, âme isolante en mousse polyuréthane ou laine de roche.</p>
+            <div class="show__specs">
+              <div><b>30 m²</b><span>Superficie</span></div>
+              <div><b>10</b><span>Personnes</span></div>
+              <div><b>Desert</b><span>Catégorie</span></div>
+            </div>
+            <ul class="show__feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg> Isolation thermique et acoustique renforcée</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg> Résistance aux chocs et à la corrosion</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg> Montage rapide, sans travaux lourds</li>
+            </ul>
+            <div class="show__actions">
+              <a class="btn btn--sm" href="produit.html" data-magnet>Fiche produit</a>
+              <a class="btn btn--glass btn--sm" href="#contact">Demander un devis</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="show__item rv">
+          <div class="show__media">
+            <span class="show__num">02</span>
+            <span class="show__badge">CABINE 2024</span>
+            <img src="../assets/img/products/cabine-tole-cover.jpg" alt="Cabine saharienne en tôle CAPREF dans le désert près de palmiers" loading="lazy">
+          </div>
+          <div>
+            <h3>Cabines Tôle</h3>
+            <p>La cabine saharienne mobile de référence : structure métallique robuste, pensée pour les bases-vie de l'exploration pétrolière et les chantiers de travaux publics en environnement désertique.</p>
+            <div class="show__specs">
+              <div><b>44 m²</b><span>Superficie</span></div>
+              <div><b>12</b><span>Personnes</span></div>
+              <div><b>Sahara</b><span>Catégorie</span></div>
+            </div>
+            <ul class="show__feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg> Châssis mobile pour déplacements répétés</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg> Résistance aux vents de sable et à la chaleur</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg> Raccordable en base-vie complète</li>
+            </ul>
+            <div class="show__actions">
+              <a class="btn btn--sm" href="produit.html" data-magnet>Fiche produit</a>
+              <a class="btn btn--glass btn--sm" href="#contact">Demander un devis</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTEURS ══ -->
+  <section class="section" id="secteurs">
+    <div class="container">
+      <div class="sec-head rv">
+        <span class="tag">Ce que nous faisons</span>
+        <h2>Des espaces <span class="grad">pour chaque métier</span></h2>
+      </div>
+      <div class="sectors">
+        <div class="sect__list" role="tablist" aria-label="Secteurs d'activité">
+          <button class="sect__row" type="button" role="tab" aria-selected="true" data-key="petrole" data-title="Exploration pétrolière" data-desc="Bases-vie complètes pour les sites d'exploration du Grand Sud.">
+            <em>01</em><b>Exploration pétrolière</b>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <button class="sect__row" type="button" role="tab" aria-selected="false" data-key="tp" data-title="Travaux publics &amp; BTP" data-desc="Bureaux de chantier, vestiaires, postes de garde et sanitaires mobiles.">
+            <em>02</em><b>Travaux publics &amp; BTP</b>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <button class="sect__row" type="button" role="tab" aria-selected="false" data-key="etat" data-title="Institutions de l'État" data-desc="Modules administratifs, salles de classe et locaux techniques.">
+            <em>03</em><b>Institutions de l'État</b>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <button class="sect__row" type="button" role="tab" aria-selected="false" data-key="collectivites" data-title="Collectivités locales" data-desc="Kiosques, guérites et points d'accueil de proximité.">
+            <em>04</em><b>Collectivités locales</b>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <button class="sect__row" type="button" role="tab" aria-selected="false" data-key="tourisme" data-title="Tourisme &amp; loisirs" data-desc="Chalets en bois pour villages de vacances et campings.">
+            <em>05</em><b>Tourisme &amp; loisirs</b>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <button class="sect__row" type="button" role="tab" aria-selected="false" data-key="particuliers" data-title="Particuliers" data-desc="Extensions, studios de jardin et habitations légères.">
+            <em>06</em><b>Particuliers</b>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+        <div class="sect__preview rv" data-d="1">
+          <img data-key="petrole" src="../assets/img/site/video-image-2.png" alt="Cabines sahariennes sur un site d'exploration pétrolière" loading="lazy">
+          <img data-key="tp" src="../assets/img/site/about.png" alt="Module en cours de fabrication dans l'atelier CAPREF" loading="lazy">
+          <img data-key="etat" src="../assets/img/products/element-01.jpg" alt="Alignement de modules administratifs préfabriqués" loading="lazy">
+          <img data-key="collectivites" src="../assets/img/site/strategy.png" alt="Guérite et kiosques colorés produits par CAPREF" loading="lazy">
+          <img data-key="tourisme" src="../assets/img/products/cabine-sandwich-1.jpg" alt="Chalet préfabriqué blanc dans un jardin" loading="lazy">
+          <img data-key="particuliers" src="../assets/img/products/cabine-sandwich-cover.jpg" alt="Cabine résidentielle avec véranda" loading="lazy">
+          <div class="sect__cap"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FRISE ══ -->
+  <section class="section">
+    <div class="container">
+      <div class="sec-head rv">
+        <span class="tag">Notre historique</span>
+        <h2>Sept héritages, <span class="grad">une seule entreprise</span></h2>
+      </div>
+      <div class="rail rv">
+        <div class="rail__card"><b>1905</b><p>CAPREF Hussein-Dey — ex PHD (Préfabriqué Hussein Dey)</p></div>
+        <div class="rail__card"><b>1934</b><p>CAPREF Sidi-Moussa — ex PEB (Préfabriqué et Bois)</p></div>
+        <div class="rail__card"><b>1941</b><p>CAPREF Oran — ex Mischler</p></div>
+        <div class="rail__card"><b>1960</b><p>CAPREF Oued el Kerma — ex CSMA (Cabines Sahariennes et Meubles d'Alger)</p></div>
+        <div class="rail__card"><b>1963</b><p>CAPREF Baba Ali — ex CSBA (Cabines Sahariennes de Baba Ali)</p></div>
+        <div class="rail__card"><b>1968</b><p>CAPREF Ain M'Lila — ex CABAM (Cabines sahariennes de Ain M'Lila)</p></div>
+        <div class="rail__card"><b>1970</b><p>CAPREF Béjaïa — ex TRANSBOIS</p></div>
+        <div class="rail__card"><b>Aujourd'hui</b><p>DIVINDUS CAPREF Spa — 7 unités réunies sous une même bannière</p></div>
+      </div>
+      <p class="rail__hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg> Faites défiler horizontalement pour parcourir la frise</p>
+    </div>
+  </section>
+
+  <!-- ══ CITATION ══ -->
+  <section class="section">
+    <div class="aurora" aria-hidden="true"><span class="a1" style="right:auto;left:-10%;top:10%"></span></div>
+    <div class="container quote rv">
+      <span class="quote__mark" aria-hidden="true">&ldquo;</span>
+      <p>CAPREF dispose des ressources humaines, du savoir-faire, de la culture et des valeurs nécessaires pour rebondir. Ensemble, nous allons bâtir un avenir durable, fidèle à l'héritage de notre entreprise, mais résolument tourné vers <span class="grad">l'innovation et la performance</span>.</p>
+      <div class="quote__who">
+        <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></i>
+        <div><b>Madjid MOUHOUB</b><span>Président-Directeur Général de CAPREF</span></div>
+      </div>
+      <div class="pillars">
+        <div class="pillar"><b>Rigueur</b><span>dans l'exécution</span></div>
+        <div class="pillar"><b>Clarté</b><span>dans la décision</span></div>
+        <div class="pillar"><b>Confiance</b><span>entre nous tous</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ RÉSEAU ══ -->
+  <section class="section" id="reseau">
+    <div class="container">
+      <div class="sec-head sec-head--row rv">
+        <div>
+          <span class="tag">Nos unités</span>
+          <h2>Un réseau industriel <span class="grad">à l'échelle nationale</span></h2>
+        </div>
+      </div>
+      <div class="mapwrap rv">
+        <div class="mapwrap__list" role="group" aria-label="Liste des unités CAPREF">
+          <button class="uchip" type="button" aria-pressed="true" data-lat="36.748" data-lng="3.08341" data-name="Siège social" data-role="202, Rue Hassiba Ben Bouali, Alger"><i>SS</i><span><b>Siège social</b><span>Alger centre</span></span></button>
+          <button class="uchip" type="button" aria-pressed="false" data-lat="36.05" data-lng="6.57543" data-name="CAPREF Ain M'Lila" data-role="ex CABAM · 1968"><i>01</i><span><b>CAPREF Ain M'Lila</b><span>ex CABAM · 1968</span></span></button>
+          <button class="uchip" type="button" aria-pressed="false" data-lat="36.61465" data-lng="3.10088" data-name="CAPREF Sidi-Moussa" data-role="ex PHD · 1905"><i>02</i><span><b>CAPREF Sidi-Moussa</b><span>ex PHD · 1905</span></span></button>
+          <button class="uchip" type="button" aria-pressed="false" data-lat="36.6146546" data-lng="3.1008866" data-name="CAPREF Sidi-Moussa" data-role="ex PEB · 1934"><i>03</i><span><b>CAPREF Sidi-Moussa</b><span>ex PEB · 1934</span></span></button>
+          <button class="uchip" type="button" aria-pressed="false" data-lat="36.68438" data-lng="3.06956" data-name="CAPREF Oued el Kerma" data-role="ex CSMA · 1960"><i>04</i><span><b>CAPREF Oued el Kerma</b><span>ex CSMA · 1960</span></span></button>
+          <button class="uchip" type="button" aria-pressed="false" data-lat="36.66535" data-lng="3.05449" data-name="CAPREF Baba Ali" data-role="ex CSBA · 1963"><i>05</i><span><b>CAPREF Baba Ali</b><span>ex CSBA · 1963</span></span></button>
+          <button class="uchip" type="button" aria-pressed="false" data-lat="36.73976" data-lng="5.07575" data-name="CAPREF Béjaïa" data-role="ex TRANSBOIS · 1970"><i>06</i><span><b>CAPREF Béjaïa</b><span>ex TRANSBOIS · 1970</span></span></button>
+          <button class="uchip" type="button" aria-pressed="false" data-lat="35.68404" data-lng="-0.63827" data-name="CAPREF Oran" data-role="ex MISCHLER · 1941"><i>07</i><span><b>CAPREF Oran</b><span>ex MISCHLER · 1941</span></span></button>
+        </div>
+        <div id="mapM" role="application" aria-label="Carte des unités DIVINDUS CAPREF en Algérie" tabindex="0"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ACTUALITÉS ══ -->
+  <section class="section" id="actus">
+    <div class="container">
+      <div class="sec-head sec-head--row rv">
+        <div>
+          <span class="tag">Actualités</span>
+          <h2>La vie de <span class="grad">l'entreprise</span></h2>
+        </div>
+        <a class="alink" href="#">Toutes les actualités <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="posts">
+        <article class="pnews rv">
+          <div class="pnews__img"><img src="../assets/img/news/news-batiwest.jpg" alt="Stand DIVINDUS CAPREF au salon BATIWEST 2024 à Oran" loading="lazy"><span class="pnews__date">29/10/2024</span></div>
+          <div class="pnews__body">
+            <h3>Oran — Participation au Salon BATIWEST 2024</h3>
+            <p>Du 23 au 27 octobre, Oran a accueilli le salon international BATIWEST, événement majeur du secteur du bâtiment.</p>
+            <a class="alink" href="#">Lire <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="pnews pnews--rtl rv" data-d="1">
+          <div class="pnews__img"><img src="../assets/img/news/news-revolution.png" alt="Commémoration du 70e anniversaire du déclenchement de la Révolution" loading="lazy"><span class="pnews__date">01/11/2024</span></div>
+          <div class="pnews__body">
+            <h3 lang="ar">إحياء الذكرى 70 لاندلاع الثورة المجيدة</h3>
+            <p lang="ar">بمناسبة إحياء الذكرى السبعين لاندلاع الثورة التحريرية المجيدة.</p>
+            <a class="alink" href="#" style="direction:ltr">Lire <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="pnews pnews--rtl rv" data-d="2">
+          <div class="pnews__img"><img src="../assets/img/news/news-17-octobre.jpg" alt="Commémoration des martyrs des massacres du 17 octobre 1961" loading="lazy"><span class="pnews__date">18/10/2024</span></div>
+          <div class="pnews__body">
+            <h3 lang="ar">إحياء ذكرى شهداء مجازر 17 أكتوبر 1961</h3>
+            <p lang="ar">وقفة ترحّم وتكريم لأرواح شهداء مجازر 17 أكتوبر 1961.</p>
+            <a class="alink" href="#" style="direction:ltr">Lire <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="pnews pnews--rtl rv" data-d="3">
+          <div class="pnews__img"><img src="../assets/img/news/news-retraites.jpg" alt="Cérémonie d'honneur des travailleurs retraités à l'unité CAPREF Sidi Moussa" loading="lazy"><span class="pnews__date">07/11/2024</span></div>
+          <div class="pnews__body">
+            <h3 lang="ar">حفل تكريم العمال المتقاعدين بوحدة كابراف سيدي موسى</h3>
+            <p lang="ar">تكريم العمال المتقاعدين تقديرا لمسارهم المهني داخل المؤسسة.</p>
+            <a class="alink" href="#" style="direction:ltr">Lire <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ GALERIE ══ -->
+  <section class="section" id="galerie">
+    <div class="container">
+      <div class="sec-head sec-head--center rv">
+        <span class="tag" style="margin-inline:auto;display:inline-flex">Photothèque</span>
+        <h2>Nos réalisations <span class="grad">en images</span></h2>
+      </div>
+      <div class="mgal rv">
+        <button type="button" data-light="../assets/img/products/cabine-sandwich-cover.jpg" aria-label="Agrandir : cabine en panneau sandwich"><img src="../assets/img/products/cabine-sandwich-cover.jpg" alt="Cabine en panneau sandwich avec véranda" loading="lazy"></button>
+        <button type="button" data-light="../assets/img/site/video-image-2.png" aria-label="Agrandir : base-vie saharienne"><img src="../assets/img/site/video-image-2.png" alt="Base-vie de cabines sahariennes" loading="lazy"></button>
+        <button type="button" data-light="../assets/img/products/cabine-tole-cover.jpg" aria-label="Agrandir : cabine saharienne"><img src="../assets/img/products/cabine-tole-cover.jpg" alt="Cabine saharienne dans le désert" loading="lazy"></button>
+        <button type="button" data-light="../assets/img/site/about.png" aria-label="Agrandir : atelier de production"><img src="../assets/img/site/about.png" alt="Atelier de production CAPREF" loading="lazy"></button>
+        <button type="button" data-light="../assets/img/products/element-01.jpg" aria-label="Agrandir : allée de cabines"><img src="../assets/img/products/element-01.jpg" alt="Allée bordée de cabines préfabriquées" loading="lazy"></button>
+        <button type="button" data-light="../assets/img/site/strategy.png" aria-label="Agrandir : gamme CAPREF"><img src="../assets/img/site/strategy.png" alt="Chalet en bois, cabines orange et guérite CAPREF" loading="lazy"></button>
+        <button type="button" data-light="../assets/img/products/cabine-sandwich-1.jpg" aria-label="Agrandir : chalet préfabriqué"><img src="../assets/img/products/cabine-sandwich-1.jpg" alt="Chalet préfabriqué blanc dans un jardin" loading="lazy"></button>
+        <button type="button" data-light="../assets/img/site/mission-1.png" aria-label="Agrandir : cabines avec escaliers"><img src="../assets/img/site/mission-1.png" alt="Cabines sahariennes avec escaliers d'accès" loading="lazy"></button>
+        <button type="button" data-light="../assets/img/news/gallery-1.jpg" aria-label="Agrandir : photothèque CAPREF"><img src="../assets/img/news/gallery-1.jpg" alt="Photo de la photothèque CAPREF" loading="lazy"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CTA ══ -->
+  <section class="bigcta" id="contact">
+    <div class="aurora" aria-hidden="true"><span class="a1" style="top:-30%"></span><span class="a2"></span></div>
+    <div class="container">
+      <span class="tag" style="margin-inline:auto;display:inline-flex">N'hésitez pas à nous contacter</span>
+      <h2>Construisons <span class="grad">votre espace</span></h2>
+      <p class="lead">Nos équipes vous accompagnent de l'étude du besoin jusqu'à la livraison et au montage sur site, partout en Algérie.</p>
+      <div class="bigcta__row">
+        <a class="btn" href="mailto:divindus.capref@divindus-capref.dz" data-magnet>
+          Demander un devis
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a class="btn btn--glass" href="tel:+21321670309">+213 (0) 21 67 03 09</a>
+      </div>
+      <div class="bigcta__info">
+        <div><b>Adresse</b><span>202, Rue Hassiba Ben Bouali, Alger</span></div>
+        <div><b>E-mail</b><a href="mailto:divindus.capref@divindus-capref.dz">divindus.capref@divindus-capref.dz</a></div>
+        <div><b>Téléphone</b><a href="tel:+213560342338">+213 (0) 5 60 34 23 38</a></div>
+        <div><b>Horaires</b><span>Dimanche à jeudi · 8h — 16h</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer class="foot">
+  <div class="container">
+    <div class="foot__grid">
+      <div class="foot__brand">
+        <img src="../assets/img/brand/logo-capref-sidebar.png" alt="DIVINDUS CAPREF">
+        <p>DIVINDUS CAPREF est une entreprise publique économique, filiale du Groupe DIVINDUS, spécialisée dans la fabrication des cabines et chalets en préfabriqué.</p>
+        <div class="foot__soc">
+          <a href="https://www.facebook.com/people/Divindus-Capref/100087994983235/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1Z"/></svg></a>
+          <a href="https://www.linkedin.com/company/divindus-capref/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.9 8H4v12h2.9V8ZM5.4 3.5a1.7 1.7 0 1 0 0 3.4 1.7 1.7 0 0 0 0-3.4ZM20 13.4c0-3.2-1.8-4.7-4.1-4.7-1.9 0-2.7 1-3.2 1.8V8H9.8v12h2.9v-6.7c0-1.4.7-2.3 1.9-2.3 1.1 0 1.7.8 1.7 2.3V20H20v-6.6Z"/></svg></a>
+          <a href="https://www.youtube.com/@groupedivindus4537" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8ZM10 15V9l5.2 3L10 15Z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h6>Produits</h6>
+        <ul>
+          <li><a href="produit.html">Cabine en panneau sandwich</a></li>
+          <li><a href="produit.html">Cabines Tôle</a></li>
+          <li><a href="#produits">Chalets préfabriqués</a></li>
+          <li><a href="#produits">Guérites &amp; kiosques</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Entreprise</h6>
+        <ul>
+          <li><a href="#entreprise">À propos</a></li>
+          <li><a href="#entreprise">Vision &amp; Mission</a></li>
+          <li><a href="#reseau">Nos unités</a></li>
+          <li><a href="#galerie">Photothèque</a></li>
+          <li><a href="#actus">Actualités</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Contact</h6>
+        <ul>
+          <li><a href="mailto:divindus.capref@divindus-capref.dz">divindus.capref@divindus-capref.dz</a></li>
+          <li><a href="tel:+21321670309">+213 (0) 21 67 03 09</a></li>
+          <li><a href="tel:+213560342338">+213 (0) 5 60 34 23 38</a></li>
+          <li><span style="font-size:.93rem;color:var(--txt-3)">202, Rue Hassiba Ben Bouali, Alger</span></li>
+          <li><span style="font-size:.93rem;color:var(--txt-3)">Dimanche à jeudi · 8h — 16h</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <span>© <span data-year>2026</span> DIVINDUS CAPREF Spa — Tous droits réservés.</span>
+      <span>Maquette · Proposition B « Design Moderne » — <a href="../index.html">voir la Proposition A</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="demo">
+  <b>Proposition B</b><span>— Design Moderne</span>
+  <a href="../index.html">Proposition A →</a>
+</div>
+
+<div class="mlight" role="dialog" aria-modal="true" aria-label="Image agrandie">
+  <button class="mlight__close" type="button" aria-label="Fermer l'image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <img src="" alt="">
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="../assets/js/modern.js"></script>
+<script src="../assets/js/status.js"></script>
+</body>
+</html>
