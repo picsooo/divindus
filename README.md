@@ -7,7 +7,7 @@ textes, logo, photographies, chiffres clés, coordonnées des 7 unités et histo
 | | Proposition A | Proposition B |
 |---|---|---|
 | **Nom** | Corporate Pro | Design Moderne |
-| **URL** | `/` | `/modern` |
+| **URL** | `/` | `/moderne` |
 | **Positionnement** | Institutionnel, rassurant, orienté appels d'offres et marchés publics | Immersif, premium, « effet whaou » |
 | **Fond** | Clair | Sombre |
 | **Typographie** | Lexend + Source Sans 3 | Sora + Inter |
@@ -28,7 +28,7 @@ Les deux versions partagent le même dossier `assets/` (images, polices, logos).
 ├── produit-cabine-tole.html        → Proposition A · Fiche produit + fiche technique
 ├── unites.html                     → Proposition A · Réseau industriel (carte Leaflet)
 ├── contact.html                    → Proposition A · Contact & demande de devis
-├── modern/
+├── moderne/
 │   ├── index.html                  → Proposition B · Accueil (one-page immersif)
 │   └── produit.html                → Proposition B · Fiche produit
 └── assets/
@@ -71,7 +71,7 @@ python -m http.server 8080
 npx serve .
 ```
 
-Puis ouvrir <http://localhost:8080> (Proposition A) et <http://localhost:8080/modern/> (Proposition B).
+Puis ouvrir <http://localhost:8080> (Proposition A) et <http://localhost:8080/moderne/> (Proposition B).
 
 ---
 
@@ -92,7 +92,7 @@ Framework Preset : **Other**, aucune commande de build, répertoire de sortie : 
 Les URLs produites :
 
 * `https://<projet>.vercel.app/` → Proposition A
-* `https://<projet>.vercel.app/modern` → Proposition B
+* `https://<projet>.vercel.app/moderne` → Proposition B
 
 ---
 

@@ -11,10 +11,10 @@
 (function () {
   'use strict';
 
-  // Détecte si l'on se trouve dans /modern/ pour construire les liens relatifs
-  var inModern = /\/modern\//.test(location.pathname) || /modern[\\/][^\\/]*$/.test(location.pathname);
+  // Détecte si l'on se trouve dans /moderne/ pour construire les liens relatifs
+  var inModern = /[\\/]moderne[\\/]/.test(location.pathname);
   var up = inModern ? '../' : '';
-  var into = inModern ? '' : 'modern/';
+  var into = inModern ? '' : 'moderne/';
 
   /* ----- Référentiel des pages ------------------------------------------ */
   var LEGEND = {
