@@ -7,7 +7,7 @@
 <style>
 :root{--navy:#0E2430;--navy2:#132F3E;--teal:#17A9AE;--teal2:#0F8C91;--ink:#1B2A33;--gray:#5C6B75;--bg:#F5F7F8;--line:#E3E8EB;--w:#fff}
 *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{font-family:"Inter",system-ui,sans-serif;color:var(--ink);background:var(--w);line-height:1.6;-webkit-font-smoothing:antialiased}
+html,body{overflow-x:hidden}body{font-family:"Inter",system-ui,sans-serif;color:var(--ink);background:var(--w);line-height:1.6;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
 h1,h2,h3{font-weight:700;letter-spacing:-.01em;line-height:1.15}
 .wrap{max-width:1240px;margin:0 auto;padding:0 28px}
@@ -37,7 +37,7 @@ header nav a{padding:6px 0;border-bottom:2px solid transparent}
 header nav a.on,header nav a:hover{border-bottom-color:var(--teal)}
 header.solid{position:sticky;background:var(--navy);color:#fff}
 .burger{display:none;background:none;border:0;color:#fff;font-size:1.6rem}
-@media(max-width:1100px){header nav,header .bar .btn{display:none}.burger{display:block}}
+@media(max-width:1500px){header nav ul{gap:16px;font-size:.66rem}header .bar{gap:14px}header .bar .btn{padding:11px 14px;font-size:.7rem}}@media(max-width:1200px){header nav,header .bar .btn{display:none}.burger{display:block}}
 /* FOOTER */
 footer{background:var(--navy);color:#C5D0D6;font-size:.85rem}
 footer .g{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr 1fr;gap:36px;padding:64px 0 44px}
@@ -89,17 +89,17 @@ footer .bot div a{margin-left:22px}
 .stats small{display:block;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#C5D0D6;margin-top:6px;line-height:1.4}
 @media(max-width:1000px){.stats .g{grid-template-columns:repeat(3,1fr)}.stats .s:nth-child(4){border-left:0}}@media(max-width:600px){.stats .g{grid-template-columns:1fr 1fr}.stats .s:nth-child(odd){border-left:0}.stats .s:nth-child(4){border-left:1px solid rgba(255,255,255,.1)}}
 /* SOLUTIONS */
-.sols .g{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.sols .g{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .sol{background:#fff;border:1px solid var(--line);border-radius:4px;overflow:hidden;text-align:center;transition:.3s}
 .sol:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(14,36,48,.12);border-color:transparent}
-.sol .im{aspect-ratio:1/1;position:relative;background:#dfe5e9}
+.sol .im{aspect-ratio:16/10;position:relative;background:#dfe5e9}
 .sol .im img{width:100%;height:100%;object-fit:cover}
 .sol .ic{width:54px;height:54px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center;margin:-27px auto 0;position:relative;color:var(--teal);box-shadow:0 4px 12px rgba(0,0,0,.08)}
-.sol .in{padding:14px 14px 20px}
-.sol h3{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;min-height:2.3em}
-.sol p{font-size:.72rem;color:var(--gray);line-height:1.5;min-height:4.5em}
+.sol .in{padding:16px 22px 26px}
+.sol h3{font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.sol p{font-size:.85rem;color:var(--gray);line-height:1.55}
 .sol .arr{display:block;color:var(--teal);font-size:.85rem;margin-top:10px}
-@media(max-width:1000px){.sols .g{grid-template-columns:repeat(3,1fr)}}@media(max-width:600px){.sols .g{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.sols .g{grid-template-columns:1fr 1fr;gap:14px}.sol .in{padding:14px 12px 18px}.sol h3{font-size:.72rem}.sol p{font-size:.75rem}}@media(max-width:480px){.sols .g{grid-template-columns:1fr}}
 /* BANNER */
 .ban{padding:0}.ban .wrap{max-width:none;padding:0}.ban .box{position:relative;width:100%;min-height:420px;display:flex;align-items:center;color:#fff;overflow:hidden;background:var(--navy)}
 .ban img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
@@ -136,9 +136,21 @@ footer .bot div a{margin-left:22px}
 .trust .lg{font-weight:800;font-size:1.15rem;color:#8F9BA3;letter-spacing:.02em;opacity:.8;filter:grayscale(1);transition:.3s}
 .trust .lg:hover{opacity:1;color:var(--navy)}
 .trust .lg small{display:block;font-size:.55rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase}
+
+/* MOBILE NAV */
+.mnav{position:fixed;inset:0;background:var(--navy);z-index:200;display:none;flex-direction:column;padding:24px 28px}
+.mnav.open{display:flex}
+.mnav .x{align-self:flex-end;background:none;border:0;color:#fff;font-size:2rem;line-height:1}
+.mnav ul{list-style:none;margin-top:16px;display:grid;gap:4px}
+.mnav a{display:block;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1);color:#fff;font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.9rem}
+.mnav .btn{margin-top:22px;justify-content:center}
+.mnav .lg{margin-top:auto;color:#9FB0BA;font-size:.8rem;letter-spacing:.1em}
+@media(max-width:1100px){header .logo img{height:46px}header .bar{padding:4px 0 14px}header .top{padding-top:10px}}
+@media(max-width:600px){.wrap{padding:0 18px}.hero .wrap{padding-top:120px;padding-bottom:60px}.hero h1{font-size:1.7rem}.hero p{font-size:.95rem}.hero .act .btn{width:100%;justify-content:center}.hero .scroll{display:none}.stats .s{padding:16px 12px;gap:10px}.stats svg{width:28px;height:28px}.stats b{font-size:1.25rem}.stats small{font-size:.62rem}.ban .in{padding:40px 18px}.ban h2{font-size:1.5rem}.rl{aspect-ratio:16/11}.nw{grid-template-columns:110px 1fr;gap:12px}footer .g{padding:44px 0 32px;gap:28px}footer .bot{justify-content:center;text-align:center}footer .bot div a{margin:0 8px}.st h2{font-size:1.2rem}.trust .g{justify-content:center;gap:22px}}
 </style>
 </head>
 <body>
+<div class="mnav" id="mnav"><button class="x" aria-label="Fermer" onclick="mn(0)">×</button><ul><li><a onclick="mn(0)" href="#">Accueil</a></li><li><a onclick="mn(0)" href="#engagement">L'entreprise</a></li><li><a onclick="mn(0)" href="#solutions">Solutions</a></li><li><a onclick="mn(0)" href="#">Secteurs</a></li><li><a onclick="mn(0)" href="#realisations">Réalisations</a></li><li><a onclick="mn(0)" href="#engagement">Innovation</a></li><li><a onclick="mn(0)" href="#actualites">Actualités</a></li><li><a onclick="mn(0)" href="#">Carrières</a></li><li><a onclick="mn(0)" href="#contact">Contact</a></li></ul><a class="btn btn-t" href="#contact" onclick="mn(0)">Demander un devis</a><div class="lg"><b style="color:#fff">FR</b> &nbsp;|&nbsp; AR &nbsp;|&nbsp; EN</div></div>
 
 <header>
   <div class="wrap">
@@ -147,16 +159,16 @@ footer .bot div a{margin-left:22px}
       <a class="logo" href="/v2"><img src="/assets/img/brand/logo-capref.png" alt="DIVINDUS CAPREF — Cabines et Préfabriqué"></a>
       <nav><ul><li><a class="on" href="#">Accueil</a></li><li><a href="#engagement">L'entreprise</a></li><li><a href="#solutions">Solutions</a></li><li><a href="#">Secteurs</a></li><li><a href="#realisations">Réalisations</a></li><li><a href="#engagement">Innovation</a></li><li><a href="#actualites">Actualités</a></li><li><a href="#">Carrières</a></li><li><a href="#contact">Contact</a></li></ul></nav>
       <a class="btn btn-t" href="#contact">Demander un devis</a>
-      <button class="burger" aria-label="Menu">☰</button>
+      <button class="burger" aria-label="Menu" onclick="mn(1)">☰</button>
     </div>
   </div>
 </header>
 
 <div class="screen">
 <section class="hero" id="hero">
-  <div class="slide on"><img src="/assets/img/site/cat-cabine-2024.jpg" alt=""></div>
-  <div class="slide"><img src="/assets/img/site/cat-cabine-2025.jpg" alt=""></div>
-  <div class="slide"><img src="/assets/img/site/hero-banner.png" alt=""></div>
+  <div class="slide on"><img src="/assets/img/site/hero-banner.png" alt=""></div>
+  <div class="slide"><img src="/assets/img/site/video-image-2.png" alt=""></div>
+  <div class="slide"><img src="/assets/img/products/cabine-sandwich-cover.jpg" alt=""></div>
   <div class="wrap">
     <div class="txt" data-i="0">
       <h1><b>Construire <span>rapidement.</span></b><b>Construire <span>durablement.</span></b><b>Construire <span>l'avenir.</span></b></h1>
@@ -190,11 +202,11 @@ footer .bot div a{margin-left:22px}
   <div class="st"><h2>Nos solutions modulaires</h2></div>
   <div class="g">
     <a class="sol rv" href="/v2/produit"><div class="im"><img src="/assets/img/products/cabine-sandwich-cover.jpg" alt=""></div><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11 12 3l9 8v10H3z"/><path d="M10 21v-6h4v6"/></svg></div><div class="in"><h3>Cabines sahariennes</h3><p>Conçues pour résister aux conditions climatiques extrêmes du désert.</p><span class="arr"></span></div></a>
-    <a class="sol rv" href="/v2/produit"><div class="im"><img src="/assets/img/site/cat-cabine-2025.jpg" alt=""></div><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20c0-4 2-6 6-6s6 2 6 6M12 20c0-4 2-6 6-6s4 2 4 6"/></svg></div><div class="in"><h3>Bases vie</h3><p>Solutions complètes pour héberger et équiper vos équipes sur site.</p><span class="arr"></span></div></a>
-    <a class="sol rv" href="/v2/produit"><div class="im"><img src="/assets/img/site/hero-banner.png" alt=""></div><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12 12 4l10 8"/><path d="M5 10v10h14V10"/><path d="M9 20v-5h6v5"/></svg></div><div class="in"><h3>Chalets préfabriqués</h3><p>Confortables, esthétiques et durables pour tous vos besoins.</p><span class="arr"></span></div></a>
+    <a class="sol rv" href="/v2/produit"><div class="im"><img src="/assets/img/site/hero-banner.png" alt=""></div><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20c0-4 2-6 6-6s6 2 6 6M12 20c0-4 2-6 6-6s4 2 4 6"/></svg></div><div class="in"><h3>Bases vie</h3><p>Solutions complètes pour héberger et équiper vos équipes sur site.</p><span class="arr"></span></div></a>
+    <a class="sol rv" href="/v2/produit"><div class="im"><img src="/assets/img/site/cat-cabine-2025.jpg" alt=""></div><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12 12 4l10 8"/><path d="M5 10v10h14V10"/><path d="M9 20v-5h6v5"/></svg></div><div class="in"><h3>Chalets préfabriqués</h3><p>Confortables, esthétiques et durables pour tous vos besoins.</p><span class="arr"></span></div></a>
     <a class="sol rv" href="/v2/produit"><div class="im"><img src="/assets/img/products/cabine-sandwich-2.jpg" alt=""></div><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3v8a5 5 0 0 0 10 0V3"/><path d="M5 3h4M15 3h4M12 16v5M9 21h6"/></svg></div><div class="in"><h3>Sanitaires</h3><p>Modules sanitaires adaptés à tous les environnements et normes.</p><span class="arr"></span></div></a>
     <a class="sol rv" href="/v2/produit"><div class="im"><img src="/assets/img/products/cabine-tole-cover.jpg" alt=""></div><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V4h8v3M3 12h18"/></svg></div><div class="in"><h3>Bureaux modulaires</h3><p>Espaces de travail fonctionnels et évolutifs.</p><span class="arr"></span></div></a>
-    <a class="sol rv" href="/v2/produit"><div class="im"><img src="/assets/img/products/cabine-sandwich-1.jpg" alt=""></div><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c0 2 3 4 6 4s6-2 6-4v-5M22 9v6"/></svg></div><div class="in"><h3>Écoles modulaires</h3><p>Des infrastructures éducatives rapides et durables.</p><span class="arr"></span></div></a>
+    <a class="sol rv" href="/v2/produit"><div class="im"><img src="/assets/img/site/cat-cabine-2024.jpg" alt=""></div><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c0 2 3 4 6 4s6-2 6-4v-5M22 9v6"/></svg></div><div class="in"><h3>Écoles modulaires</h3><p>Des infrastructures éducatives rapides et durables.</p><span class="arr"></span></div></a>
   </div>
 </div></section>
 
@@ -242,7 +254,8 @@ footer .bot div a{margin-left:22px}
   </div>
   <div class="bot"><span>© 2026 DIVINDUS CAPREF SPA – Tous droits réservés</span><div><a href="#">Mentions légales</a><a href="#">Plan du site</a><a href="#">Politique de confidentialité</a></div></div>
 </div></footer>
-<script>const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+<script>function mn(o){document.getElementById('mnav').classList.toggle('open',o);document.body.style.overflow=o?'hidden':''}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});document.querySelectorAll('.rv').forEach(e=>io.observe(e));
 document.querySelectorAll('[data-count]').forEach(el=>{const t=+el.dataset.count,s=el.dataset.suffix||'';const o=new IntersectionObserver(([e])=>{if(!e.isIntersecting)return;o.disconnect();let st;const f=ts=>{st=st||ts;const p=Math.min((ts-st)/1400,1);el.textContent=Math.round(t*(1-Math.pow(1-p,3))).toLocaleString('fr-FR')+s;if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)});o.observe(el)});
 
 (()=>{const S=[...document.querySelectorAll('.slide')],T=[...document.querySelectorAll('.hero .txt')],D=[...document.querySelectorAll('.hero .dots span')];let i=0,t;const hero=document.getElementById('hero');
