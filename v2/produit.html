@@ -30,8 +30,8 @@ header{position:absolute;top:0;left:0;right:0;z-index:50;color:#fff}
 header .top{display:flex;justify-content:flex-end;gap:6px;padding:14px 0 0;font-size:.72rem;letter-spacing:.1em}
 header .top a{opacity:.75}header .top a.on{opacity:1;font-weight:700}header .top i{opacity:.4;font-style:normal}
 header .bar .btn{white-space:nowrap}header .bar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:6px 0 18px}
-header .logo{background:#fff;padding:8px 14px;border-radius:4px;display:inline-block;flex:none}
-header .logo img{height:60px;width:auto;max-width:none;object-fit:contain}
+header .logo{display:inline-block;flex:none}
+header .logo img{height:78px;width:auto;max-width:none;object-fit:contain;filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}
 header nav ul{display:flex;gap:26px;list-style:none;font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
 header nav a{padding:6px 0;border-bottom:2px solid transparent}
 header nav a.on,header nav a:hover{border-bottom-color:var(--teal)}
@@ -143,7 +143,7 @@ header.solid{position:relative}
 .mnav a{display:block;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1);color:#fff;font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.9rem}
 .mnav .btn{margin-top:22px;justify-content:center}
 .mnav .lg{margin-top:auto;color:#9FB0BA;font-size:.8rem;letter-spacing:.1em}
-@media(max-width:1100px){header .logo img{height:46px}header .bar{padding:4px 0 14px}header .top{padding-top:10px}}
+@media(max-width:1100px){header .logo img{height:58px}header .bar{padding:4px 0 14px}header .top{padding-top:10px}}
 @media(max-width:600px){.wrap{padding:0 18px}.hero .wrap{padding-top:120px;padding-bottom:60px}.hero h1{font-size:1.7rem}.hero p{font-size:.95rem}.hero .act .btn{width:100%;justify-content:center}.hero .scroll{display:none}.stats .s{padding:16px 12px;gap:10px}.stats svg{width:28px;height:28px}.stats b{font-size:1.25rem}.stats small{font-size:.62rem}.ban .in{padding:40px 18px}.ban h2{font-size:1.5rem}.rl{aspect-ratio:16/11}.nw{grid-template-columns:110px 1fr;gap:12px}footer .g{padding:44px 0 32px;gap:28px}footer .bot{justify-content:center;text-align:center}footer .bot div a{margin:0 8px}.st h2{font-size:1.2rem}.trust .g{justify-content:center;gap:22px}}
 </style>
 </head>
@@ -154,7 +154,7 @@ header.solid{position:relative}
   <div class="wrap">
     <div class="top"><a class="on" href="#">FR</a><i>|</i><a href="#">AR</a><i>|</i><a href="#">EN</a></div>
     <div class="bar">
-      <a class="logo" href="/v2"><img src="/assets/img/brand/logo-capref.png" alt="DIVINDUS CAPREF"></a>
+      <a class="logo" href="/v2"><img src="/assets/img/brand/logo-capref-white.png" alt="DIVINDUS CAPREF"></a>
       <nav><ul><li><a href="/v2">Accueil</a></li><li><a href="/v2#engagement">L'entreprise</a></li><li><a class="on" href="/v2#solutions">Solutions</a></li><li><a href="#">Secteurs</a></li><li><a href="/v2#realisations">Réalisations</a></li><li><a href="#">Innovation</a></li><li><a href="/v2#actualites">Actualités</a></li><li><a href="#">Carrières</a></li><li><a href="/v2#contact">Contact</a></li></ul></nav>
       <a class="btn btn-t" href="#config">Demander un devis</a>
       <button class="burger" aria-label="Menu" onclick="mn(1)">☰</button>
