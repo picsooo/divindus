@@ -114,6 +114,33 @@ footer .bot div a{margin-left:22px}
 @keyframes pl{70%{box-shadow:0 0 0 26px rgba(23,169,174,0)}100%{box-shadow:0 0 0 0 rgba(23,169,174,0)}}
 .ban .pic .lbl{position:absolute;left:24px;bottom:20px;font-size:.65rem;letter-spacing:.06em;color:rgba(255,255,255,.7);font-style:italic;text-shadow:0 1px 3px rgba(0,0,0,.6)}
 @media(max-width:900px){.ban .box{grid-template-columns:1fr}.ban .in{padding:44px 20px}.ban .pic{min-height:260px}}
+
+/* OFFERT */
+.offert{background:var(--bg);border-top:1px solid var(--line)}
+.offert .box{background:#fff;border:1px solid var(--line);border-left:5px solid var(--teal);padding:36px 40px;display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;border-radius:4px}
+.offert .ic{width:64px;height:64px;border-radius:50%;background:#E6F6F6;color:var(--teal);display:grid;place-items:center}
+.offert .tag{display:inline-block;background:var(--teal);color:#fff;font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;margin-bottom:10px}
+.offert h2{font-size:1.4rem;color:var(--navy);text-transform:uppercase;letter-spacing:.03em}
+.offert p{color:var(--gray);font-size:.95rem;margin-top:8px;max-width:70ch}
+.offert .val{text-align:right}.offert .val b{display:block;font-size:1.6rem;color:var(--teal);font-weight:800;line-height:1}.offert .val small{font-size:.7rem;color:var(--gray);text-transform:uppercase;letter-spacing:.08em}
+@media(max-width:800px){.offert .box{grid-template-columns:1fr;padding:26px 22px}.offert .val{text-align:left}}
+/* DRONE */
+.drone{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.drone::before{content:"";position:absolute;width:640px;height:640px;border-radius:50%;border:1px solid rgba(23,169,174,.25);right:-200px;top:-260px}
+.drone::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;border:1px solid rgba(23,169,174,.35);right:-90px;top:-150px}
+.drone .g{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;position:relative;z-index:1}
+.drone .tag{display:inline-block;background:var(--teal);color:#fff;font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;margin-bottom:14px}
+.drone h2{font-size:2rem;text-transform:uppercase;font-weight:800;line-height:1.1}.drone h2 span{color:var(--teal)}
+.drone p{color:#C5D0D6;margin-top:16px;max-width:52ch}
+.drone ul{list-style:none;display:grid;gap:10px;margin-top:22px}
+.drone li{display:flex;gap:12px;align-items:center;font-size:.92rem;color:#DCE4E8}.drone li::before{content:"✓";color:var(--teal);font-weight:700}
+.drone .card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);padding:30px;border-radius:4px}
+.drone .card svg{color:var(--teal);margin-bottom:18px}
+.drone .card h3{font-size:1rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}
+.drone .card p{font-size:.88rem;margin-top:0}
+.drone .note{margin-top:36px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font-size:.75rem;color:#9FB0BA;position:relative;z-index:1}
+.drone .note b{color:#C5D0D6}
+@media(max-width:900px){.drone .g{grid-template-columns:1fr}}
 /* REALISATIONS */
 .real{background:var(--bg)}
 .real .g{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -214,6 +241,21 @@ footer .bot div a{margin-left:22px}
   <a class="btn btn-o" href="#" style="align-self:flex-start">Découvrir notre engagement</a></div>
   <a class="pic" href="https://www.youtube.com/watch?v=ETbHMpP5ryo" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1693515185000-ee4c3786ecea?w=1600&q=80&auto=format&fit=crop" alt=""><span class="play"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></span><span class="lbl">Image d'illustration</span></a>
 </div></div></section>
+
+<section class="offert"><div class="wrap"><div class="box rv">
+  <div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h3l2-3h6l2 3h3v13H4z"/><circle cx="12" cy="13" r="3.5"/></svg></div>
+  <div><span class="tag">Inclus dans l'offre</span><h2>Shooting photo professionnel offert</h2><p>À la prise en charge du site web, notre photographe se déplace sur vos unités : chalets et cabines témoins photographiés en intérieur et en extérieur, retouche et calibrage inclus. Fini les visuels basse résolution — votre catalogue en ligne montre vos vrais produits.</p></div>
+  <div class="val"><b>0 DA</b><small>Offert</small></div>
+</div></div></section>
+
+<section class="drone" id="drone"><div class="wrap">
+  <div class="g">
+    <div class="rv"><span class="tag">Inclus dans l'offre</span><h2>Prises de vues <span>par drone</span> offertes</h2><p>Vos bases-vie, cités modulaires et unités de production filmées et photographiées vue du ciel : le format qui impressionne le plus vos clients institutionnels et pétroliers.</p>
+    <ul><li>Photos aériennes 4K pour le slider et les pages réalisations</li><li>Séquence vidéo courte pour la page d'accueil et les réseaux sociaux</li><li>Un site emblématique au choix (base-vie, unité ou chantier livré)</li></ul></div>
+    <div class="card rv"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="5" cy="5" r="2.5"/><circle cx="19" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M7 7l2 2M17 7l-2 2M7 17l2-2M17 17l-2-2"/></svg><h3>Ce que ça change</h3><p>Une vue aérienne d'une base-vie de 200 cabines raconte l'échelle de CAPREF mieux que n'importe quel texte. C'est l'image que vos prospects retiennent.</p></div>
+  </div>
+  <div class="note"><b>Note :</b> la prestation drone est réalisée selon l'emplacement du site et sous réserve des autorisations préalables requises (zones industrielles, sites sensibles, réglementation aérienne en vigueur). Les démarches administratives sont à la charge du client.</div>
+</div></section>
 
 <section class="real" id="realisations"><div class="wrap">
   <div class="hd"><div class="st l"><h2>Nos réalisations</h2></div><a class="more" href="#">Voir toutes les réalisations</a></div>
