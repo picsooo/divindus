@@ -287,6 +287,5 @@ const C={ep:'40 mm',iso:'Polyuréthane',surf:'30 m²',clim:true,san:false,dv:fal
 function upd(){document.getElementById('s-surf').textContent=C.surf;document.getElementById('s-ep').textContent=C.ep;document.getElementById('s-iso').textContent=C.iso;document.getElementById('s-clim').textContent=C.clim?'Incluse':'—';document.getElementById('s-san').textContent=C.san?'Bloc intégré':'—';document.getElementById('s-dv').textContent=C.dv?'Double':'Simple';document.getElementById('s-mont').textContent=C.mont?'Montée':'En kit';const s=C.surf==='Sur mesure'?'SM':parseInt(C.surf),iso=C.iso==='Polyuréthane'?'PU':'LR';document.getElementById('ref').textContent=`CAP-PS-${s}-${parseInt(C.ep)}-${iso}${C.san?'-S':''}${C.clim?'-C':''}`;let w=3+(C.surf==='Sur mesure'?2:C.surf==='45 m²'?1:0)+(C.san?1:0);document.getElementById('del').textContent=`Délai estimé : ${w} à ${w+1} semaines`}
 document.querySelectorAll('.seg').forEach(g=>g.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{g.querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on');C[g.dataset.k]=b.dataset.v;upd()})));
 document.querySelectorAll('.tog input').forEach(i=>i.addEventListener('change',()=>{C[i.dataset.k]=i.checked;upd()}));upd();
-</script>
-<script src="https://radar-xi-flax.vercel.app/t.js" defer></script></body>
+</script></body>
 </html>
