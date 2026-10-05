@@ -288,5 +288,5 @@ function upd(){document.getElementById('s-surf').textContent=C.surf;document.get
 document.querySelectorAll('.seg').forEach(g=>g.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{g.querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on');C[g.dataset.k]=b.dataset.v;upd()})));
 document.querySelectorAll('.tog input').forEach(i=>i.addEventListener('change',()=>{C[i.dataset.k]=i.checked;upd()}));upd();
 </script>
-</body>
+<script src="https://radar-xi-flax.vercel.app/t.js" defer></script></body>
 </html>

